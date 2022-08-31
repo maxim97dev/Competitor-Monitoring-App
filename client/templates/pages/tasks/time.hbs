@@ -1,0 +1,13 @@
+<div class="task-datetime__item" data-id="{{parent.task.id}}">
+
+    <input type="checkbox" name="checkbox" data-image="{{this.image}}" data-text="{{this.text}}">
+    <div class="task-datetime__item-length">{{this.length}}</div>
+    <div class="task-datetime__item-rate">{{compareRate this}}</div>
+    <div class="task-datetime__item-time">{{converterDateTime this.time}}</div>
+    {{#ifCond @index '!==' 0}}
+        <button class="task-datetime__item-textBtn button">Text Diff</button>
+        {{else}}
+        <button class="task-datetime__item-textBtn button passive" disabled>Text Diff</button>
+    {{/ifCond}}
+
+</div>

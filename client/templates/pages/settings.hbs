@@ -1,0 +1,34 @@
+<div class="content-container">
+    <div class="settings">
+        <h1 class="page-title">Settings Page</h1>
+
+        <div class="settings-group avatar">
+            <img src="{{settings.image}}" alt="{{settings.displayName}}" class="settings__image-avatar">
+        </div>
+
+        <div class="settings-group input-group">
+            <form class="settings__avatar-form" action="http://localhost:3000/api/settings" method="POST" enctype="multipart/form-data">
+                <label class="input-group-text" for="uploaded_file">Upload image</label>
+                <input type="file" class="form-control" id="uploaded_file" name="avatar">
+                <input type="submit" value="Save Avatar" class="button btn-default">
+            </form>
+        </div>        
+
+        <div class="settings-group input-group">
+            <span class="settings__text-name input-group-text">Nickname</span>
+            <input class="settings__input-name form-control" id="name" value="{{settings.displayName}}">
+        </div>
+        <div class="settings-group input-group">
+            <span class="settings__text-email input-group-text">Email</span>
+            <input class="settings__input-email form-control" id="email" value="{{settings.email}}" disabled>
+        </div>
+
+        <div class="settings__button">
+            <button class="settings__button-edit button">Save Settings</button>
+            <a class="settings__button-back button" href="#/tasks">Back to Dashboard</a>
+        </div>
+
+        
+
+    </div>
+</div>

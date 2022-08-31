@@ -1,0 +1,39 @@
+<h1 class="page-title">Tasks List</h1>
+
+<button class="button modal-button"><span>New Jobs</span></button>
+
+<div id="modal" class="modal_block">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <div class="task-add">
+
+            <div class="task-add__container">
+                <label class="task-add__title-label" for="task-title">Enter URL:</label>
+                <input class="task-add__title" id="task-title" type="text" placeholder="Enter a website: google.by">
+                <button class="task-add__checker button">GO</button>
+            </div>
+            <div class="task-add__screenshot">
+                <div class="task-add__screenshot-heading">Preview Image Screenshot</div>
+                <div class="task-add__screenshot-group">
+                    <img src="./images/icons/photoframe.png" alt="Screenshot Base" class="task-add__screenshot-img">
+                </div>
+
+            </div>
+                <textarea class="task-add__description" placeholder="Name to Task"></textarea>
+                <button class="task-add__btn-add button" disabled>Add Task</button>
+        </div>
+    </div>
+</div>
+
+<div class="tasks">
+    <div class="tasks__additional">
+        <p class="tasks__counter"></p>
+    </div>
+
+    <div class="tasks__list">
+        {{#each tasks}}
+            {{> task task=this}}
+        {{/each}}
+    </div>
+</div>

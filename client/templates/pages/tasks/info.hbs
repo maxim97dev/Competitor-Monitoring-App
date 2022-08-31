@@ -1,0 +1,49 @@
+<h1 class="page-title">Task Info</h1>
+
+<div class="task-info">
+    <p>
+        <b>Task URL:</b>
+        {{task.title}}
+    </p>
+    <p>
+        <b>Task Description:</b>
+        {{task.description}}
+    </p>
+    <p>
+        <b>Task Status:</b>
+        {{task.status}}
+    </p>
+
+    <div class="task-info__buttons">
+        {{#ifCond task.status '!==' 'Done'}}
+            <a class="task-info__btn-edit button" href="#/task/{{task.id}}/edit">Edit Task</a>
+        {{/ifCond}}
+
+        <a class="task-info__btn-back button" href="#/tasks">Back to List</a>
+    </div>
+
+    <div class="task-datetime">
+        <div class="task-datetime__heading">
+            <span>Checkbox</span>
+            <span>Length</span>
+            <span>Rate</span>
+            <span>DateTime</span>
+            <span>Compare</span>
+        </div>
+
+        {{#each task.scan}}
+       
+            {{> time this parent=../this}}
+        {{/each}}
+
+    </div>
+    <div class="task-control">
+        <button class="task-control__button button">Visual Diff</button>
+    </div>
+    
+    <div class="task-compare">
+        <div class="task-compare__picture"></div>
+        <div class="task-compare__text"></div>
+    </div>
+
+</div>

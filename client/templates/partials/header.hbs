@@ -1,0 +1,18 @@
+<div class="header-content">
+    <img src="./images/icons/logo.png" alt="Google" class="header-logo">
+    <i class="menu-toggle"></i>
+    
+    <div class="header-link">
+        <a class="header-link__item {{#ifCond page '===' 'tasks'}}active{{/ifCond}}" href="#/tasks">Dashboard</a>
+        <a class="header-link__item {{#ifCond page '===' ''}}active{{/ifCond}}" href="#/">About</a>
+    </div>
+
+    <div class="header-profile">
+        <a href="#/settings" class="header-profile__group {{#ifCond page '===' 'settings'}}active{{/ifCond}}">
+            <img class="header-profile__logo" referrerpolicy="no-referrer" src="{{profile.user.image}}" alt="{{profile.user.displayName}} ">
+            <span class="header-profile__name">{{profile.user.displayName}}</span>
+        </a>
+
+        <a href="http://localhost:3000/auth/logout" class="header-profile__btn-logout button">Log Out</a>
+    </div>
+</div>

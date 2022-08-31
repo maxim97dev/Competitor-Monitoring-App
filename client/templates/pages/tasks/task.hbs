@@ -1,0 +1,16 @@
+<div class="task {{#ifCond task.status '===' 'Done'}}task_done{{/ifCond}}" data-id="{{task.id}}">
+    <img class="task__image" src="{{task.thumbnail}}" data-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAADIBAMAAACg8cFmAAAAG1BMVEXMzMyWlpbFxcWjo6O3t7ecnJy+vr6xsbGqqqqKROEAAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACuklEQVR4nO3WTW/aQBAG4AFj7KPHBuMj26g9s1XVXm2laq9YEXfzD0BtlatdVerf7swuJATILZtI1fscLLxeyS/7MWsiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAID/lCncNTtpGrH4/EZ5DgzXdC2Waz7vm122BWJ4ff7CUXV//4PzK31fM9bs/IUjTWQWl33fr18plK6tOV2LlRSvFuEaU+oquow1nb9RIM9kdu1j3fKn01gsjTe5b041Y7PWXhNb1G4om5KorcPF2i5crEh2X/8YazInk7c5pdo84SWR7TXWwFzRhOWHrEltDhUrmrtYQ/HdLh5jRQWZij/Svvhpy7FONNfSK+Evt9yNuSNbhZxok415J9epXFP/7zXWBzuTTbojDSRTZns/q2RkjPYrnT0uKKkCxqIhl2uqO6/duViunK5ltA4bsl3u1/pL+kokinMa+mnFlM5CxpISZbJYX6EvPcbqZJMSpTqvttvmJB30L0jwqKRmNZnZLr5Scl8ulsydydyCaly9HM03m7vf8kiaIvm94Voz6ZiSldtWA6blvjbhyqu8asyyx1zl2rryNcofHlHsRm6XVjJA2tDq7ULmMcqaftuHjEX7/NlYfkJ72XODbgxytxVFs9HKrPa7oLHi6ukkno7WYVXzsu3caNXuNlmYPs5sFzRWwtsnS/4kVqRL/p2s+m++ulkZoPGSpkVTR2UbLJU/DVv7pECcxPLNNTV/K19MVn4EeVgmi4CnuYvV8Hk5PT6aajmVo8bcla5hq+VU2m0rNf7Kt8+Lxor54vA5PrLVV23WHv7k/HMrf0DOJNnAZeBYE744qo+PbnxzohctJlY3ouxZubQBP1b9l5a9+LB5ePRrrs3T41dZ0t7V+kwmc1iFiwUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgfwDCrpePU371MAAAAAASUVORK5CYII=" alt="Preview">
+
+    <div class="task__group">
+        <span class="task__description">{{task.description}}</span>
+        <a class="task__title" data-id="{{task.id}}">{{task.title}}</a>
+    </div>
+    
+    <div class="task__buttons">
+        {{#ifCond task.status '!==' 'Done'}}
+            <a class="task__btn-info button" href="#/task/{{task.id}}">Info</a>
+            <a class="task__btn-edit button" href="#/task/{{task.id}}/edit">Edit</a>
+        {{/ifCond}}
+        <a class="task__btn-remove button">Remove</a>
+    </div>
+</div>
