@@ -33,3 +33,17 @@ directory. You shall see the following files and directories:
         package.json         node.js dependencies
         server.js            server startpoint file
         
+Clone the repo and install the dependencies.
+
+
+```bash
+git clone https://github.com/maxim97dev/Competitor-Monitoring-App.git
+
+cd .\client\
+npm install
+npm start
+
+cd .\server\
+npm install
+npm start
+```
