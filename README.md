@@ -1,4 +1,4 @@
-Competitor Monitoring Web Application
+# Competitor Monitoring Web Application
 =============================
 
 <p align="center">
@@ -7,8 +7,7 @@ Competitor Monitoring Web Application
 
 Thank you for choosing Competitor Monitoring Web Application!
 
-INSTALLATION
-------------
+## INSTALLATION
 
 Please make sure the release file is unpacked under a Web-accessible
 directory. You shall see the following files and directories:
@@ -47,6 +46,22 @@ cd .\server\
 npm install
 npm start
 ```
+* **Login button to Google oAuth 2.0.**
 
 ![Image text](https://drive.google.com/uc?export=view&id=1OVDTz4GfvqRS1uzC1AIf7FBFMZvwcYZx)
 
+* **Choose your Google account.**
+
+![Image text](https://drive.google.com/uc?export=view&id=1_szAPm0J6JrSQbGcLeTGHzq2Th030IYu)
+
+* **Add task.**
+
+![Image text](https://drive.google.com/uc?export=view&id=1kNOVARMAS0YE1m7ZmKhm3rsvgb2Z6OjL)
+
+* **Enter website and get preview to add task list.**
+
+![Image text](https://drive.google.com/uc?export=view&id=1h8Z51muwfvouH1JyN2YISQRU7kYAof5j)
+
+* **Website task list.**
+
+![Image text](https://drive.google.com/uc?export=view&id=1sJ-JkY-Ote-g8YWVOmqNUU0iiPKQBnyy)
