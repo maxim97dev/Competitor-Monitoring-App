@@ -47,3 +47,6 @@ cd .\server\
 npm install
 npm start
 ```
+
+![Image text](https://drive.google.com/uc?export=view&id=1OVDTz4GfvqRS1uzC1AIf7FBFMZvwcYZx)
+
