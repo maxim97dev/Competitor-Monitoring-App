@@ -60,8 +60,16 @@ npm start
 
 * **Enter website and get preview to add task list.**
 
-![Image text](https://drive.google.com/uc?export=view&id=1h8Z51muwfvouH1JyN2YISQRU7kYAof5j)
+<img width="800" src="https://drive.google.com/uc?export=view&id=1h8Z51muwfvouH1JyN2YISQRU7kYAof5j">
 
 * **Website task list.**
 
-![Image text](https://drive.google.com/uc?export=view&id=1sJ-JkY-Ote-g8YWVOmqNUU0iiPKQBnyy)
+<img width="800" src="https://drive.google.com/uc?export=view&id=1sJ-JkY-Ote-g8YWVOmqNUU0iiPKQBnyy">
+
+* **Сompare text content (Data update every hour).**
+
+<img width="800" src="https://drive.google.com/uc?export=view&id=1f6mKACB5HzQTHaIG7uqEfhRMWlpzmwKr">
+
+* **Сompare visual content (Data update every hour).**
+
+<img width="800" src="#">
